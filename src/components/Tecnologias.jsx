@@ -1,15 +1,14 @@
-function Tecnologias({img, nome}){
-    return(
-        <div className="w-1/4 p-4">
-
-            <div className="algin items-center rounded hover:bg-gray-500  border-2 border-sky-600 w-full p-10">
-            <i className={img + " text-9xl"} ></i>
-            <h2 className="pt-12 pl-6 font-bold text-2xl">{nome}</h2>
-            </div>
-            
-        </div>
-    )
-
+function Tecnologias({ img, nome }) {
+  return (
+    <div className="group flex flex-col items-center gap-3 rounded-lg border border-line bg-panelAlt p-6 text-center transition-all hover:-translate-y-1 hover:border-cyan hover:shadow-glow">
+      <i className={`${img} text-5xl text-muted transition-colors group-hover:text-cyan`} />
+      <span className="jsx-tag text-sm text-ink">
+        <span className="bracket">&lt;</span>
+        {nome}
+        <span className="bracket">/&gt;</span>
+      </span>
+    </div>
+  )
 }
 
 export default Tecnologias

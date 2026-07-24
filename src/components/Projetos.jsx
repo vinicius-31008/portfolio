@@ -1,17 +1,26 @@
-function Projeto({nome, descricao, link}){
-    return(
-        <div className="flex flex-col items-center w-1/3 p-4 text-white">
+function Projeto({ nome, descricao, link }) {
+  return (
+    <div className="flex flex-col justify-between gap-4 rounded-lg border border-line bg-panel p-6 text-ink transition-all hover:-translate-y-1 hover:border-violet hover:shadow-glowViolet">
+      <div>
+        <h3 className="jsx-tag mb-2 text-lg">
+          <span className="bracket">&lt;</span>
+          {nome}
+          <span className="bracket">/&gt;</span>
+        </h3>
+        <p className="text-sm text-muted">{descricao}</p>
+      </div>
 
-            <div className="w-full flex flex-col items-center border-2 border-sky-600 rounded p-4 font-sans">
-            <h2>{nome}</h2>
-            <br />
-            <p>{descricao}</p>
-            <br />
-            <button link={link} className="bg-secondary-900 font-bold py-2 px-4 rounded transition-transform transform hover:scale-105 hover:bg-gray-600 border-2">Projeto</button>
-            </div> 
-
-        </div>
-    )
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex w-fit items-center gap-2 rounded border border-cyan px-4 py-2 font-display text-sm font-medium text-cyan transition-colors hover:bg-cyan/10"
+      >
+        Ver projeto
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  )
 }
 
 export default Projeto

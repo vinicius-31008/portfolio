@@ -64,7 +64,7 @@ function Section() {
           </div>
 
           <div>
-            <h3 className="jsx-tag mb-6 font-display text-3xl font-semibold text-violet-soft sm:text-2xl">
+            <h3 className="jsx-tag mb-6 font-display text-3xl font-semibold  sm:text-2xl">
               <span className="bracket">&lt;</span>Tecnologias<span className="bracket">/&gt;</span>
             </h3>
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-2">

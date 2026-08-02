@@ -17,6 +17,11 @@ const PROJETOS = [
     descricao: "Um projeto desenvolvido no SENAI para fins avaliativos, o projeto se trata de um sistema para um supermercado",
     link: "https://github.com/vinicius-31008/SupermercadoFront",
   },
+  {
+    nome: "Calculadora python",
+    descricao: "Um projeto desenvolvido para fim de aprendizagem, o projeto se trata de uma calculadora simples feita em python",
+    link: "https://github.com/vinicius-31008/Calculadora-em-python",
+  },
 ]
 
 function Portfolio() {
